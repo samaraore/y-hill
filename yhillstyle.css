@@ -1,48 +1,93 @@
-header{
-    font-family:Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: 'almendra_displayregular';
+    src: url('./webfonts/almendradisplay-regular-webfont.woff2') format('woff2'),
+         url('./webfonts/almendradisplay-regular-webfont.woff') format('woff');
+    font-weight: 50;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'oleo_script_swash_capsregular';
+    src: url('./webfonts/oleoscriptswashcaps-regular-webfont.woff2') format('woff2'),
+         url('./webfonts/oleoscriptswashcaps-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header h1{
+    font-family:'almendra_displayregular', Helvetica, serif;
     text-align: center;
+    font-size: 7em;
+    margin-top: 20px;
+    margin-bottom: auto;
+    color: #DBD98C;
+}
+
+#links {
+    text-align: center;
+}
+#links ul{ 
+    padding: 0; margin: 0;
+    display: inline;
+    list-style-type: none;
+    font-size: 40px;
+}
+#links li{
+    display: inline;
+    padding:15px;
+}
+#links li a{
+    display: inline; padding: 3;
+    font-family: Cambria, sans-serif;
+    color: #F4A5A1;
 }
 
 body {
     font-size: 14pt;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:rgb(187, 0, 93);
-    background-color: rgb(138, 127, 29);
-    /*text-align: center;*/
-
+    font-family: Cambria, sans-serif;
+    background-color: #257590;
 }
 
 #intro {
+    
+    background-color: #D3DAE2;
+    padding-bottom: 2%;
+    color: #257590;
     text-align: center;
 }
 
-#media{
-    text-align: center;
-    border-style: solid;
-    border: 5px;
-    border-color: bisque;
-}
 
-
-h1{
-    font-size: 25pt;
+#intro h2{
+    font-size: 20pt;
+    font-family: "oleo_script_swash_capsregular", Verdana, sans-serif;
     font-weight: 700;
-    color:rgb(174, 187, 28);
+    padding-top: 1%;
+    color: #8F8F8F;
+}
+#intro aside{
+    text-align: center;
+    flex-direction: row;
 }
 
-img{
-    padding: 15pt;
+#intro aside a{
+    color: #257590;
+    font-size: 25px;
+    font-family: "oleo_script_swash_capsregular",Tahoma, sans-serif;
+    padding:2%;
+    display: inline-block;
+    background-color: #F4A5A1;
+    border-radius: 15px;
 }
-
-ul{
-    list-style-type: none;
-    font-size: 40px;
-}
-
 
 
 footer{
-    font-size: 10px;
-    font-style: italic;
-    text-align: end;
+    color: transparent;
+    background-image: radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, #fff 15px, rgba(255,255,255,0) 16px),
+					radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, #fff 15px, rgba(255,255,255,0) 16px),
+					radial-gradient(circle at 15px 0, rgba(255,255,255,0) 4px, #fff 5px, rgba(255,255,255,0) 6px),
+					radial-gradient(circle at 5px 5px, rgba(255,255,255,0) 1px, #fff 2px, rgba(255,255,255,0) 3px);
+	background-repeat: repeat-x;
+	background-position: 0 0, 15px 6px, 0 0, 25px 9px;
+	background-size: 30px 21px, 30px 21px, 30px 21px, 30px 20px;
 }
