@@ -1,22 +1,30 @@
 @font-face {
     font-family: 'almendra_displayregular';
     src: url('./webfonts/almendradisplay-regular-webfont.woff2') format('woff2'),
-         url('./webfonts/almendradisplay-regular-webfont.woff') format('woff');
+        url('./webfonts/almendradisplay-regular-webfont.woff') format('woff');
     font-weight: 50;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'oleo_script_swash_capsregular';
-    src: url('./webfonts/oleoscriptswashcaps-regular-webfont.woff2') format('woff2'),
-         url('./webfonts/oleoscriptswashcaps-regular-webfont.woff') format('woff');
+    font-family: 'BigShouldersInlineText-Thin';
+    src: url('./webfonts/BigShouldersInlineText-Thin.tff') format('tff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-header h1{
-    font-family:'almendra_displayregular', Helvetica, serif;
+@font-face {
+    font-family: 'BigShouldersInlineText-Thin';
+    src: url('./webfonts/oleoscriptswashcaps-regular-webfont.woff2') format('woff2'),
+        url('./webfonts/oleoscriptswashcaps-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header h1 {
+    font-family: 'almendra_displayregular', Helvetica, serif;
     text-align: center;
     font-size: 7em;
     margin-top: 20px;
@@ -27,18 +35,23 @@ header h1{
 #links {
     text-align: center;
 }
-#links ul{ 
-    padding: 0; margin: 0;
+
+#links ul {
+    padding: 0;
+    margin: 0;
     display: inline;
     list-style-type: none;
     font-size: 40px;
 }
-#links li{
+
+#links li {
     display: inline;
-    padding:15px;
+    padding: 15px;
 }
-#links li a{
-    display: inline; padding: 3;
+
+#links li a {
+    display: inline;
+    padding: 3;
     font-family: Cambria, sans-serif;
     color: #F4A5A1;
 }
@@ -50,7 +63,7 @@ body {
 }
 
 #intro {
-    
+
     background-color: #D3DAE2;
     padding-bottom: 2%;
     color: #257590;
@@ -58,36 +71,38 @@ body {
 }
 
 
-#intro h2{
+#intro h2 {
     font-size: 20pt;
     font-family: "oleo_script_swash_capsregular", Verdana, sans-serif;
     font-weight: 700;
     padding-top: 1%;
     color: #8F8F8F;
 }
-#intro aside{
+
+#intro aside {
     text-align: center;
     flex-direction: row;
 }
 
-#intro aside a{
-    color: #257590;
+#intro aside a {
+    color: #F4A5A1;
     font-size: 25px;
-    font-family: "oleo_script_swash_capsregular",Tahoma, sans-serif;
-    padding:2%;
+    font-family: "oleo_script_swash_capsregular", Tahoma, sans-serif;
+    padding: 1%;
     display: inline-block;
-    background-color: #F4A5A1;
+    border: dotted 8px;
+    border-color: #fad3d1;
     border-radius: 15px;
 }
 
 
-footer{
+footer {
     color: transparent;
-    background-image: radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, #fff 15px, rgba(255,255,255,0) 16px),
-					radial-gradient(circle at 15px 0, rgba(255,255,255,0) 14px, #fff 15px, rgba(255,255,255,0) 16px),
-					radial-gradient(circle at 15px 0, rgba(255,255,255,0) 4px, #fff 5px, rgba(255,255,255,0) 6px),
-					radial-gradient(circle at 5px 5px, rgba(255,255,255,0) 1px, #fff 2px, rgba(255,255,255,0) 3px);
-	background-repeat: repeat-x;
-	background-position: 0 0, 15px 6px, 0 0, 25px 9px;
-	background-size: 30px 21px, 30px 21px, 30px 21px, 30px 20px;
+    background-image: radial-gradient(circle at 15px 0, rgba(255, 255, 255, 0) 14px, #fff 15px, rgba(255, 255, 255, 0) 16px),
+        radial-gradient(circle at 15px 0, rgba(255, 255, 255, 0) 14px, #fff 15px, rgba(255, 255, 255, 0) 16px),
+        radial-gradient(circle at 15px 0, rgba(255, 255, 255, 0) 4px, #fff 5px, rgba(255, 255, 255, 0) 6px),
+        radial-gradient(circle at 5px 5px, rgba(255, 255, 255, 0) 1px, #fff 2px, rgba(255, 255, 255, 0) 3px);
+    background-repeat: repeat-x;
+    background-position: 0 0, 15px 6px, 0 0, 25px 9px;
+    background-size: 30px 21px, 30px 21px, 30px 21px, 30px 20px;
 }
